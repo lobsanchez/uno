@@ -1,12 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{html, php, js}",
-    "./src/**/*",
-    "./**/*.{html, php, js}"
+    "./*.{html,php,js}",
+    "./assets/templates/*.{html,php,js}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        'azul-claro': '#243cff',
+        'azul-oscuro': '#0d1b3e',
+      },
+      width:{
+        '43':'172px',
+      },
+      spacing:{
+        '42':'170px',
+      }
+    },
   },
   plugins: [],
 }
